@@ -1,0 +1,104 @@
+@font-face {
+  font-family: Jost;
+  src: url('../Cover/Jost-SemiBold.ttf');
+}
+@font-face{
+  font-family: Jost-Bold;
+  src: url('../Cover/Jost-ExtraBold.ttf');
+}
+
+@media (min-width: 1200px){
+h2, .h2 {
+    font-size: 1.875rem;
+}
+}
+h2, .h2 {
+    font-size: calc(1.3125rem + 0.75vw);
+}
+
+.categories{
+  margin:100px;
+}
+.categories>div{
+  margin-top:25px;
+}
+.category-header{
+  font-family: 'Jost';
+  font-size: 30px;
+}
+
+.category-description{}
+
+.single-course{
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px 1px rgb(233, 231, 231);
+  margin: 10px;
+}
+.course-title{
+  font-size: 17px;
+}
+
+.course-description{
+  font-size: 14px;
+  color: #FF9800;
+  font-weight: 600;
+}
+
+.icon{
+  padding: 10px;
+  width: 75px;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  background-color: #D9F5EB;
+}
+
+.single-course:hover{
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  background-color: #03B97C;
+  cursor: pointer;
+  color: white;
+}
+
+.single-course:hover>.icon{
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  background-color: white;
+}
+.single-course:hover>:nth-child(2)>.course-description{
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  color: white;
+}
+
+.icon>i{
+  color: #03B97C;
+  font-size: 27px;
+}
+
+@media (min-width: 1200px){
+.icon {
+  text-align: center;
+    font-size: 27px;
+    width: 60px;
+    height: 60px;
+}
+}
+
+@media (max-width: 1200px){
+  .icon {
+    text-align: center;
+      font-size: 5px;
+      width: 35px;
+      height: 35px;
+  }
+  .icon>i{
+    color: #03B97C;
+    font-size: 20px;
+  }
+  }

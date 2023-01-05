@@ -1,0 +1,101 @@
+.featured-courses{
+  background-color: #F4F4F4;
+  width: 100%;
+  padding: 25px;
+}
+
+.courses-grid{
+margin: 25px auto 25px 180px;
+}
+.featured-single-course{
+  background-color: #ffffff;
+  padding: 5px;
+  margin: 15px;
+  overflow: hidden;
+}
+
+
+.avatar{
+  width: 30px;
+  border-radius: 50%;
+}
+
+.attachment-skillup-course-grid{
+  transition: transform 0.3s;
+  width:100%;
+  object-fit:fill;
+}
+.entry-thumb{
+  overflow: hidden;
+}
+.course-grid{
+  padding: 10px;
+}
+
+.course-category{
+  background-color: #E5F8F2;
+  padding: 5px 15px 5px 15px;
+  border-radius: 35px;
+  margin-bottom: 10px;
+}
+
+.course-category>a{
+  color: #03B980;
+}
+
+h3>a{
+  color: black;
+}
+h3{
+  text-align: start;
+}
+
+.course-meta-field>i{
+  margin-right: 10px;
+}
+
+.course-meta-bottom{
+  padding: 15px;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: 15px;
+  border-top: 1px grey;
+  border-top-style: solid;
+}
+
+.course-price{
+  color: #03B980;
+  font-family: 'Jost';
+  font-size: 25px;
+}
+
+.author-title>a>span{
+  margin-left: 10px;
+  font-weight: 600;
+  color: #000;
+}
+
+.author-title>a>span:hover{
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  color: #03B980;
+  text-decoration: none;
+}
+
+.author-title>a:hover{
+  text-decoration: none;
+}
+
+.course-title>a:hover{
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  color: #03B980;
+  text-decoration: none;
+}
+
+.featured-single-course:hover .attachment-skillup-course-grid{
+  transform: scale(1.03);
+}
+
