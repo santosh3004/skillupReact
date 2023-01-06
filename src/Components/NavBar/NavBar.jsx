@@ -1,11 +1,18 @@
-import React from 'react'
+import {React,useState} from 'react'
+import MobileNav from './MobileNav';
 import './navbar.css';
 
 function NavBar() {
+  const [mobNav, setmobNav] = useState(false);
+
+  function handleMobNavStatus(){
+    setmobNav(!mobNav);
+  }
   return (
     <div>
+      { mobNav && <MobileNav handleMobNavStatus={handleMobNavStatus}/>}
       <div className='sticky'>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
         <div className='p-2 mr-5'>
       <a href="https://demoapus1.com/skillup/">
                 <span className="logo-main">
@@ -13,7 +20,7 @@ function NavBar() {
             </a>
             </div>
        
-  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportdeContent" aria-controls="navbarSupportdeContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button onClick={handleMobNavStatus} id='toggler-btn' className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportdeContent" aria-controls="navbarSupportdeContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
   <div className="collapse navbar-collapse" id="navbarSupportedContent">

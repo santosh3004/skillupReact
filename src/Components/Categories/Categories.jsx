@@ -1,5 +1,6 @@
 import React from 'react'
 import './categories.css'
+import Category from './Category'
 
 function Categories() {
   return (
@@ -9,63 +10,14 @@ function Categories() {
         <div className='category-description' style={{maxWidth:'670px',}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
         <div>
         <div className='row row-cols-5 justify-content-center align-items-center courses'>
-          <div className='d-flex col flex-column single-course align-items-center'>
-            <div className='icon' ><i className="fa fa-journal-whills"></i></div>
-            <div className='text-center'>
-              <h2 className='course-title'>Development</h2>
-              <div className='course-description'>3 Courses</div>
-            </div>
-          </div>
-          <div className='d-flex col flex-column single-course align-items-center'>
-            <div className='icon' ><i className="fa fa-business-time"></i></div>
-            <div className='text-center'>
-              <h2 className='course-title'>Web Designing</h2>
-              <div className='course-description'>3 Courses</div>
-            </div>
-          </div>
-          <div className='d-flex col flex-column single-course align-items-center'>
-            <div className='icon' ><i className="fa fa-journal-whills"></i></div>
-            <div className='text-center'>
-              <h2 className='course-title'>Lifestyle</h2>
-              <div className='course-description'>3 Courses</div>
-            </div>
-          </div>
-          <div className='d-flex col flex-column single-course align-items-center'>
-            <div className='icon' ><i className="fa fa-journal-whills"></i></div>
-            <div className='text-center'>
-              <h2 className='course-title'>Health & Fitness</h2>
-              <div className='course-description'>3 Courses</div>
-            </div>
-          </div>
-          <div className='d-flex col flex-column single-course align-items-center'>
-            <div className='icon' ><i className="fa fa-business-time"></i></div>
-            <div className='text-center'>
-              <h2 className='course-title'>IT & Software</h2>
-              <div className='course-description'>3 Courses</div>
-            </div>
-          </div>
-          <div className='d-flex col flex-column single-course align-items-center'>
-            <div className='icon' ><i class="fa fa-journal-whills"></i></div>
-            <div className='text-center'>
-              <h2 className='course-title'>Photography</h2>
-              <div className='course-description'>3 Courses</div>
-            </div>
-          </div>
-          <div className='d-flex col flex-column single-course align-items-center'>
-            <div className='icon' ><i class="fa fa-journal-whills"></i></div>
-            <div className='text-center'>
-              <h2 className='course-title'>Finance & Accounting</h2>
-              <div className='course-description'>3 Courses</div>
-            </div>
-          </div>
-          <div className='d-flex col flex-column single-course align-items-center'>
-            <div className='icon'><i class="fa fa-business-time"></i></div>
-            <div className='text-center'>
-              <h2 className='course-title'>Medical</h2>
-              <div className='course-description'>3 Courses</div>
-            </div>
-          </div>
-     
+          <Category icon={'fa fa-code'} title={'Development'} description={'3 Courses'}/>
+          <Category icon={'fa fa-window-restore'} title={'Web Designing'} description={'6 Courses'}/>
+          <Category icon={'fa fa-leaf'} title={'Lofestyle'} description={'4 Courses'}/>
+          <Category icon={'fa fa-heartbeat'} title={'Health & Fitness'} description={'2 Courses'}/>
+          <Category icon={'fa fa-laptop'} title={'IT & Software'} description={'2 Courses'}/>
+          <Category icon={'fa fa-photo-video'} title={'Photography'} description={'1 Courses'}/>
+          <Category icon={'fa fa-stamp'} title={'Finance & Accounting'} description={'3 Courses'}/>
+          <Category icon={'fa fa-briefcase'} title={'Medical'} description={'0 Courses'}/>
       </div>
         </div>
       </div>

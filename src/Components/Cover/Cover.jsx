@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react'
 import './cover.css';
+import CoverBottomComponent from './CoverBottomComponent';
 
 function Cover() {
 
@@ -51,28 +52,11 @@ function Cover() {
         <img decoding="async" src="https://demoapus1.com/skillup/wp-content/uploads/2022/04/side-2.png" className="attachment-large size-large" alt="" loading="lazy" srcSet="https://demoapus1.com/skillup/wp-content/uploads/2022/04/side-2.png 778w, https://demoapus1.com/skillup/wp-content/uploads/2022/04/side-2-300x286.png 300w, https://demoapus1.com/skillup/wp-content/uploads/2022/04/side-2-768x731.png 768w, https://demoapus1.com/skillup/wp-content/uploads/2022/04/side-2-500x476.png 500w" sizes="(max-width: 660px) 100vw, 660px"/>
         </div>
       </div>
-      <div className='d-flex container justify-content-center cover-footer'>
-          <div className='d-flex single-cover-footer align-items-center'>
-            <div style={{backgroundColor:'#FFEDE7',borderColor:'#FF602E',color:'#FF5722'}}><i className="fa fa-journal-whills"></i></div>
-            <div>
-              <h3 className='cover-footer-title'>200+ Cources</h3>
-              <div className='cover-footer-dexcription'>Duis aute irure dolor in voluptate velit esse cillum labore .</div>
-            </div>
-          </div>
-          <div className='d-flex single-cover-footer align-items-center'>
-            <div style={{backgroundColor:'#F2EDFA',borderColor:'#A688DD',color:'#906AD4'}}><i className="fa fa-business-time"></i></div>
-            <div>
-              <h3 className='cover-footer-title'>Fully Lifetime Access</h3>
-              <div className='cover-footer-dexcription'>Duis aute irure dolor in voluptate velit esse cillum labore .</div>
-            </div>
-          </div>
-          <div className='d-flex single-cover-footer align-items-center'>
-            <div style={{backgroundColor:'#EFF7E6',borderColor:'#90C950',color:'#7CBF2F'}}><i className="fa fa-journal-whills"></i></div>
-            <div>
-              <h3 className='cover-footer-title'>200+ Cources Available</h3>
-              <div className='cover-footer-dexcription'>Duis aute irure dolor in voluptate velit esse cillum labore .</div>
-            </div>
-          </div>
+      <div className='row ml-5 mr-auto cover-footer'>
+        <CoverBottomComponent iconColor={'#FF5722'} iconBg={'#FFEDE7'} borderColor={'#FF602E'} icon={'fa fa-journal-whills'} title={'200+ Cources'} description={'Duis aute irure dolor in voluptate velit esse cillum labore .'}/>
+        <CoverBottomComponent iconColor={'#906AD4'} iconBg={'#F2EDFA'} borderColor={'#A688DD'} icon={'fa fa-business-time'} title={'Fully Lifetime Access'} description={'Duis aute irure dolor in voluptate velit esse cillum labore .'}/>
+        <CoverBottomComponent iconColor={'#7CBF2F'} iconBg={'#EFF7E6'} borderColor={'#90C950'} icon={'fa fa-journal-whills'} title={'200+ Cources Available'} description={'Duis aute irure dolor in voluptate velit esse cillum labore .'}/>
+
      
       </div>
       </div>

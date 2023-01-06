@@ -4,6 +4,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  margin: 0;
 }
 
 code {
@@ -14,4 +16,13 @@ code {
 @font-face {
   font-family: Muli;
   src: url('Components/NavBar/muli.regular.ttf');
+}
+
+@font-face {
+  font-family: Jost;
+  src: url('./Components/Cover/Jost-SemiBold.ttf');
+}
+@font-face{
+  font-family: Jost-Bold;
+  src: url('./Components/Cover/Jost-ExtraBold.ttf');
 }

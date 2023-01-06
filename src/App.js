@@ -5,9 +5,10 @@ import Cover from './Components/Cover/Cover';
 import Categories from './Components/Categories/Categories';
 import FeaturedCourses from './Components/FeaturedCourses/FeaturedCourses';
 import ServiceInformation from './Components/ServiceInformation/ServiceInformation';
-import Instructors from './Components/Instructors/Instructures';
+import Instructors from './Components/Instructors/Instructors';
 import NewsArticle from './Components/NewsArticle/NewsArticle';
 import Footer from './Components/Footer/Footer';
+
 
 
 function App() {

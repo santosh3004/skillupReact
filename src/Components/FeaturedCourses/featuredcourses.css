@@ -99,3 +99,27 @@ h3{
   transform: scale(1.03);
 }
 
+.explore-btn{
+  background-color: #c6f1e4;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+}
+
+.explore-btn>a{
+  color: #03B980;
+  text-decoration: none;
+}
+.explore-btn:hover{
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  background-color: #03B980;
+}
+
+.explore-btn:hover>a{
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+  color: #ffffff;
+}
+
