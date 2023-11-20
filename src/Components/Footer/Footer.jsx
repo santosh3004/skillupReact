@@ -31,7 +31,7 @@ function Footer() {
           </div>
         </div>
         <div className='footer-bottom'>
-          © 2022 – Skillup. All Rights Reserved. Powered by ApusTheme
+          © 2022 – Skillup. All Rights Reserved
         </div>
       </div>
     </div>
